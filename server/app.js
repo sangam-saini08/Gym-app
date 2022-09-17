@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 const signupRoute = require("./routes/signupRoute");
 
 // config
-dotenv.config({ path: "./config/config.env" });
+dotenv.config();
 const port = process.env.PORT;
 const DB = process.env.DATABASEURI;
 
@@ -22,7 +22,7 @@ mongoose
   .connect(DB)
   .then(() => {
     app.listen(port, () => {
-        console.log("sever is running....");
+        console.log(`sever is running.... on port: ${port}`);
       });
     console.log("database connection is succesfull....");
   })
