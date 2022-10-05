@@ -1,8 +1,14 @@
-const { Router } = require('express');
-const { createResiter } = require('../controllers/signupController');
+const { Router } = require("express");
+const {
+	createResiter,
+	verifyUser,
+} = require("../controllers/signupController");
 const router = Router();
 
+// public routes
+router.route("/registration").post(createResiter);
+router.route("/login").post(verifyUser);
 
-router.route("/signup").post(createResiter)
+// private routes
 
 module.exports = router;

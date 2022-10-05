@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.home-section{
+    background: linear-gradient(90deg, #b3fffb, #e50cfe, #3498db);
+    width: 100vw;
+    height: 100vh;
+}
+
+.home-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    padding: 2rem;
+}
+
+.home-img{
+    width: 40rem;
+    height: 30rem;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.right-side h1{
+    color: #341035;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.right-side p{
+    color: #8df4bd;
+    width: 30rem;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.home-btn{
+    border-radius: 25px;
+    background-color: #FDC224;
+    color: #005f70;
+    width: 10rem;
+    padding: 10px 0px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 12px gray;
+}
